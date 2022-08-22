@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 25px);
+    grid-template-areas: 
+    "one two three three"
+    /* "two two three three"
+    "three three three three"
+    "three three three three"; */
+}
+
+.papaya {
+    background-color: papayawhip;
+    grid-area: one;
+}
