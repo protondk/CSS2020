@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template: repeat(3, 200px) / repeat(3, 200px);
+  /* To center the grid within container */
+  place-content: center;
+  /* To center each div within the grid */
+  place-items: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: palevioletred;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.container-2 {
+  width: 100%;
+  height: auto;
+  display: grid;
+  gap: 15px;
+  grid-template: repeat(3, 200px) / repeat(3, 200px);
+  /* To center the grid within container */
+  place-content: center;
+  /* To center each div within the grid */
+  place-items: center;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  background-color: paleturquoise;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
