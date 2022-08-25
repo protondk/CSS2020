@@ -7,9 +7,9 @@
 :root {
     --peach: #FF928B;
     --soft-orange: #FFAC81;
-    --dark-blue: ##4A5979;
-    --dark-ochre: ##AB6671;
-    --light-peach: ##FADFE2;
+    --dark-blue: #4A5979;
+    --dark-ochre: #AB6671;
+    --light-peach: #FADFE2;
     --black: #333;
 
 }
@@ -29,4 +29,68 @@ body {
    grid-template: repeat(10, 1fr) / repeat(10, 1fr); 
    /* SUPER IMPORTANT TO SET A HEIGHT SO ROWS CAN BE DISPLAYED WITH 1FR */
    height: 100vh;
+}
+
+.item-1 {
+    background-color: var(--light-peach);
+    grid-column: 1 / 2;
+    grid-row: 5 / 10;
+}
+.item-2 {
+    background-color: var(--dark-ochre);
+    opacity: 80%;
+    grid-column: 1 / 4;
+    grid-row: 7 / 9;
+}
+
+.item-3 {
+    background-color: var(--dark-blue);
+    grid-column: 5 / 8;
+    grid-row: 6 / 11;
+}
+.item-4 {
+    border: 4px solid var(--dark-blue);
+    grid-column: 6 / 9;
+    grid-row: 5 / 8;
+}
+.item-5 {
+    border: 4px solid var(--dark-blue);
+    grid-column: 7 / 10;
+    grid-row: 3 / 9;
+}
+
+.item-6 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+    grid-column: 6 / 9;
+    grid-row: 3 / 5;
+    color: var(--black);
+}
+
+.item-7 {
+    background-color: var(--dark-blue);
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.item-8 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--black);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-column-start: 4;
+    grid-row: 2 / 4;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
 }
