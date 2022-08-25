@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --peach: #FF928B;
+    --soft-orange: #FFAC81;
+    --dark-blue: ##4A5979;
+    --dark-ochre: ##AB6671;
+    --light-peach: ##FADFE2;
+    --black: #333;
+
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-image: linear-gradient(to top, #ff928b, #ff9887, #ff9f85, #ffa582, #ffac81);
+    height: 100vh;
+}
+
+.container {
+   display: grid;
+   grid-template: repeat(10, 1fr) / repeat(10, 1fr); 
+   /* SUPER IMPORTANT TO SET A HEIGHT SO ROWS CAN BE DISPLAYED WITH 1FR */
+   height: 100vh;
+}
